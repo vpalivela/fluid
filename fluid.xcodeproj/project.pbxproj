@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		056C7661F27F42048E832AB1 /* libPods-fluidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBB24C597AE4E34A6BD7C8A /* libPods-fluidTests.a */; };
+		CC0689C119D60C1D00941A50 /* firstSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0689C019D60C1D00941A50 /* firstSpec.m */; };
 		CCDAAB2719D6083600B1DD54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB2619D6083600B1DD54 /* main.m */; };
 		CCDAAB2A19D6083600B1DD54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB2919D6083600B1DD54 /* AppDelegate.m */; };
 		CCDAAB2D19D6083600B1DD54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB2C19D6083600B1DD54 /* ViewController.m */; };
 		CCDAAB3019D6083600B1DD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDAAB2E19D6083600B1DD54 /* Main.storyboard */; };
 		CCDAAB3219D6083600B1DD54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDAAB3119D6083600B1DD54 /* Images.xcassets */; };
 		CCDAAB3519D6083600B1DD54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDAAB3319D6083600B1DD54 /* LaunchScreen.xib */; };
-		CCDAAB4119D6083600B1DD54 /* fluidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB4019D6083600B1DD54 /* fluidTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CBB24C597AE4E34A6BD7C8A /* libPods-fluidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fluidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394965FC331443B788366D4E /* Pods-fluidTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fluidTests.xcconfig"; path = "Pods/Pods-fluidTests.xcconfig"; sourceTree = "<group>"; };
+		CC0689C019D60C1D00941A50 /* firstSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstSpec.m; sourceTree = "<group>"; };
 		CCDAAB2119D6083600B1DD54 /* fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDAAB2519D6083600B1DD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDAAB2619D6083600B1DD54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +43,6 @@
 		CCDAAB3419D6083600B1DD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CCDAAB3A19D6083600B1DD54 /* fluidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fluidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDAAB3F19D6083600B1DD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCDAAB4019D6083600B1DD54 /* fluidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fluidTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056C7661F27F42048E832AB1 /* libPods-fluidTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B50FC03485640AA81C01AD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CBB24C597AE4E34A6BD7C8A /* libPods-fluidTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CCDAAB1819D6083600B1DD54 = {
 			isa = PBXGroup;
 			children = (
 				CCDAAB2319D6083600B1DD54 /* fluid */,
 				CCDAAB3D19D6083600B1DD54 /* fluidTests */,
 				CCDAAB2219D6083600B1DD54 /* Products */,
+				394965FC331443B788366D4E /* Pods-fluidTests.xcconfig */,
+				3B50FC03485640AA81C01AD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +119,8 @@
 		CCDAAB3D19D6083600B1DD54 /* fluidTests */ = {
 			isa = PBXGroup;
 			children = (
-				CCDAAB4019D6083600B1DD54 /* fluidTests.m */,
 				CCDAAB3E19D6083600B1DD54 /* Supporting Files */,
+				CC0689C019D60C1D00941A50 /* firstSpec.m */,
 			);
 			path = fluidTests;
 			sourceTree = "<group>";
@@ -143,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCDAAB4719D6083600B1DD54 /* Build configuration list for PBXNativeTarget "fluidTests" */;
 			buildPhases = (
+				2D8BBFE2AF1B40A59EF8CEC1 /* Check Pods Manifest.lock */,
 				CCDAAB3619D6083600B1DD54 /* Sources */,
 				CCDAAB3719D6083600B1DD54 /* Frameworks */,
 				CCDAAB3819D6083600B1DD54 /* Resources */,
+				F1F78CD9ED26468AABCC936C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +230,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D8BBFE2AF1B40A59EF8CEC1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F78CD9ED26468AABCC936C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-fluidTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCDAAB1D19D6083600B1DD54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDAAB4119D6083600B1DD54 /* fluidTests.m in Sources */,
+				CC0689C119D60C1D00941A50 /* firstSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +412,7 @@
 		};
 		CCDAAB4819D6083600B1DD54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394965FC331443B788366D4E /* Pods-fluidTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,6 +432,7 @@
 		};
 		CCDAAB4919D6083600B1DD54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394965FC331443B788366D4E /* Pods-fluidTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -414,6 +465,7 @@
 				CCDAAB4619D6083600B1DD54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCDAAB4719D6083600B1DD54 /* Build configuration list for PBXNativeTarget "fluidTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +474,7 @@
 				CCDAAB4919D6083600B1DD54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
