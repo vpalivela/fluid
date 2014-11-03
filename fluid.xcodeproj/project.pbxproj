@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		056C7661F27F42048E832AB1 /* libPods-fluidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBB24C597AE4E34A6BD7C8A /* libPods-fluidTests.a */; };
 		CC0689C119D60C1D00941A50 /* firstSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0689C019D60C1D00941A50 /* firstSpec.m */; };
+		CCAB4FF319E6BC6200E58172 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAB4FF219E6BC6200E58172 /* Calculator.swift */; };
 		CCDAAB2719D6083600B1DD54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB2619D6083600B1DD54 /* main.m */; };
 		CCDAAB2A19D6083600B1DD54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB2919D6083600B1DD54 /* AppDelegate.m */; };
 		CCDAAB2D19D6083600B1DD54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDAAB2C19D6083600B1DD54 /* ViewController.m */; };
@@ -31,6 +32,9 @@
 		0CBB24C597AE4E34A6BD7C8A /* libPods-fluidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fluidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		394965FC331443B788366D4E /* Pods-fluidTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fluidTests.xcconfig"; path = "Pods/Pods-fluidTests.xcconfig"; sourceTree = "<group>"; };
 		CC0689C019D60C1D00941A50 /* firstSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstSpec.m; sourceTree = "<group>"; };
+		CCAB4FF019E4D1E000E58172 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		CCAB4FF119E6BC6100E58172 /* fluid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fluid-Bridging-Header.h"; sourceTree = "<group>"; };
+		CCAB4FF219E6BC6200E58172 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		CCDAAB2119D6083600B1DD54 /* fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDAAB2519D6083600B1DD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDAAB2619D6083600B1DD54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +107,9 @@
 				CCDAAB3119D6083600B1DD54 /* Images.xcassets */,
 				CCDAAB3319D6083600B1DD54 /* LaunchScreen.xib */,
 				CCDAAB2419D6083600B1DD54 /* Supporting Files */,
+				CCAB4FF019E4D1E000E58172 /* MyPlayground.playground */,
+				CCAB4FF219E6BC6200E58172 /* Calculator.swift */,
+				CCAB4FF119E6BC6100E58172 /* fluid-Bridging-Header.h */,
 			);
 			path = fluid;
 			sourceTree = "<group>";
@@ -269,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDAAB2D19D6083600B1DD54 /* ViewController.m in Sources */,
+				CCAB4FF319E6BC6200E58172 /* Calculator.swift in Sources */,
 				CCDAAB2A19D6083600B1DD54 /* AppDelegate.m in Sources */,
 				CCDAAB2719D6083600B1DD54 /* main.m in Sources */,
 			);
@@ -394,9 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = fluid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fluid/fluid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -404,9 +416,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = fluid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fluid/fluid-Bridging-Header.h";
 			};
 			name = Release;
 		};
